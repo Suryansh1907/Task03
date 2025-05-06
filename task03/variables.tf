@@ -1,34 +1,34 @@
-variable "rg_name" {
-  description = "Name of the Azure Resource Group"
+variable "resource_group_name" {
   type        = string
+  description = "The name of the Resource Group"
 }
 
 variable "location" {
-  description = "Azure region to deploy resources in"
   type        = string
+  description = "Azure region where resources will be deployed"
 }
 
-variable "storageaccount_name" {
-  description = "Name of the Azure Storage Account"
+variable "storage_account_name" {
   type        = string
+  description = "The name of the Storage Account"
 }
 
 variable "vnet_name" {
-  description = "Name of the Azure Virtual Network"
   type        = string
+  description = "The name of the Virtual Network"
 }
 
-variable "subnet1_name" {
-  description = "Name of the first subnet"
+variable "frontend_subnet_name" {
   type        = string
+  description = "The name of the frontend subnet"
 }
 
-variable "subnet2_name" {
-  description = "Name of the second subnet"
+variable "backend_subnet_name" {
   type        = string
+  description = "The name of the backend subnet"
 }
 
-variable "student_email" {
-  description = "Email address of the student (used in tags)"
-  type        = string
+variable "tags" {
+  type        = map(string)
+  description = "Tags to be applied to resources"
 }
