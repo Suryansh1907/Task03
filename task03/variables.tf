@@ -1,26 +1,34 @@
-variable "subscription_id" {}
-variable "client_id" {}
-variable "client_secret" {}
-variable "tenant_id" {}
-
-variable "resource_group_name" {
-  default = "cmaz-eh8dj90z-mod3-rg"
-}
-
-variable "storage_account_name" {
-  default = "cmazeh8dj90zsa"
-}
-
-variable "vnet_name" {
-  default = "cmaz-eh8dj90z-mod3-vnet"
+variable "rg_name" {
+  description = "Name of the Azure Resource Group"
+  type        = string
 }
 
 variable "location" {
-  default = "East US"
+  description = "Azure region to deploy resources in"
+  type        = string
 }
 
-variable "tags" {
-  default = {
-    Creator = "suryansh_tilak@epam.com"
-  }
+variable "storageaccount_name" {
+  description = "Name of the Azure Storage Account"
+  type        = string
+}
+
+variable "vnet_name" {
+  description = "Name of the Azure Virtual Network"
+  type        = string
+}
+
+variable "subnet1_name" {
+  description = "Name of the first subnet"
+  type        = string
+}
+
+variable "subnet2_name" {
+  description = "Name of the second subnet"
+  type        = string
+}
+
+variable "student_email" {
+  description = "Email address of the student (used in tags)"
+  type        = string
 }
