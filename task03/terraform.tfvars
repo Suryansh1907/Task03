@@ -6,7 +6,7 @@ frontend_subnet_name = "frontend"
 backend_subnet_name  = "backend"
 
 tags = {
-  Creator = "uryansh_tilak@epam.com"
+  Creator = "suryansh_tilak@epam.com"
 }
 
 
